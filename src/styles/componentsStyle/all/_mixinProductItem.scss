@@ -1,0 +1,33 @@
+@mixin ProductItem {
+    @for $i from 1 through 6 {
+      .item__#{$i} {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap:18px;
+        background-color: #F8F8F8;
+        padding-bottom: 20px;
+
+         p {
+            font-size: 13px;
+            font-weight: 700;
+            color:black;
+            margin-left: 10px;
+         }
+         .description {
+            font-size: 14px;
+            color: #5D5D5D;
+            width: 314px;
+            letter-spacing: 1px;
+            margin-left: 10px;
+        }
+        .price {
+            color: #F16D7F;
+            font-weight: 600;
+            letter-spacing: 1px;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+      }
+    }
+  }

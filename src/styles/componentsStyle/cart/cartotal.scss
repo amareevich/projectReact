@@ -1,0 +1,37 @@
+.total {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    max-height: 214px;
+    background-color: #F5F3F3;
+    padding: 42px 42px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    div {
+        display: flex;
+        justify-content: flex-end;
+        gap: 40px;
+        p {
+            min-width: 60px;
+            text-align: end;
+        }
+    }
+    &__line {
+        width: 120%;
+        height: 1px;
+        margin-left: -25px;
+        background-color: #E2E2E2;
+    }
+    &__grand {
+        p{
+            color: #F16D7F;
+        }
+    }
+    button {
+        color: white;
+        padding: 15px 44px;
+        text-wrap: nowrap;
+        background-color: #F16D7F;
+        border: none;
+    }
+}

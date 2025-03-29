@@ -1,0 +1,34 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #222224;
+    padding: 24px 0px;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        width: 1140px;
+        &__item {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            span {
+                color: #FBFBFB;
+                font-size: 16px;
+                text-align: center;
+                padding: 10px 10px; 
+            }
+            img {
+                width: 32px;
+                padding: 0 10px;
+                background-color: white;
+                transition: background-color 0.2s ease;
+                border-radius: 10px;
+                &:hover {
+                    background-color: #F16D7F;
+                }
+            }
+        }
+    }
+}

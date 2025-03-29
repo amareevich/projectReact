@@ -1,0 +1,74 @@
+.offer {
+    display: flex;
+    margin-top: 65px;
+    width: 100%;
+    justify-content: center;
+    &__content {
+        width: 1140px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        &__women {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 105px;
+            width: calc(100% / 3 - 30px);
+            background-image: url('../../../img/offer/women.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 2px;
+        }
+
+        &__men {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 105px;
+            width: calc(100% / 3 - 30px);
+            background-image: url('../../../img/offer/men.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 2px;
+        }
+        &__kid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 105px;
+            width: calc(100% / 3 - 30px);
+            background-image: url('../../../img/offer/kid.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 2px;
+        }
+        &__other {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 65px 491px;
+            width: 97.5%;
+            background-image: url('../../../img/offer/other.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 2px;
+        }
+        P {
+            font-size: 16px;
+            color: white;
+            white-space: nowrap;
+        }
+        span {
+            font-size: 24px;
+            color: #F16D7F;
+            white-space: nowrap;
+        }
+
+    }
+}

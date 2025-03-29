@@ -1,0 +1,60 @@
+@import '../all/mixinProductItem';
+
+
+.products-present {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 97px;
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        width: 1140px;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+
+        &__header {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            justify-content: center;
+            align-items: center;
+
+                p {
+                    font-size: 30px;
+                    font-weight: 700;
+                    color: black;
+                }
+
+                span {
+                    font-size: 14px;
+                    color: #9F9F9F;
+                    letter-spacing: 1px;
+                }
+        }
+
+        .products-present__content__btn {
+            padding: 15px 39px;
+            border: 1px solid #F26376;
+            background-color: white;
+            color: #F26376;
+            transition: background-color 0.2s ease, color 0.2s ease;
+            &:hover {
+                background-color: #F16D7F;
+                color: white;
+            }
+        }
+
+        &__items {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            @include ProductItem;
+        }
+    }
+}
